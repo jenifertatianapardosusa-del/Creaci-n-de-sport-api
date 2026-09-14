@@ -40,9 +40,13 @@ export default function TeamDetail({ team, onClose }) {
         </button>
 
         <div className="detail-panel__header">
-          {team.strTeamBadge && (
-            <img src={team.strTeamBadge} alt="" className="detail-panel__badge" />
-          )}
+          {team.strBadge && (
+           <img
+            src={team.strBadge}
+            alt={`Escudo de ${team.strTeam}`}
+            className="detail-panel__badge"
+             />
+            )}
           <div>
             <h2>{team.strTeam}</h2>
             <p>{[team.strLeague, team.strCountry].filter(Boolean).join(" · ")}</p>
