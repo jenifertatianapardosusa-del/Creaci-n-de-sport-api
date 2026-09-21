@@ -36,15 +36,6 @@ export default function Navbar() {
         </NavLink>
 
         <NavLink
-          to="/partidos"
-          className={({ isActive }) =>
-            isActive ? "navbar__link active" : "navbar__link"
-          }
-        >
-          Partidos
-        </NavLink>
-
-        <NavLink
           to="/favoritos"
           className={({ isActive }) =>
             isActive ? "navbar__link active" : "navbar__link"

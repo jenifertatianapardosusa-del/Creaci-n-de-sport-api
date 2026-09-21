@@ -1282,3 +1282,231 @@ button {
     padding: 20px 18px 50px;
   }
 }
+/* =========================================
+   FAVORITOS
+========================================= */
+
+.favorite-btn {
+  display: block;
+  margin: 35px 0 20px auto;
+  padding: 10px 16px;
+
+  border: 1px solid #35d98b;
+  border-radius: 10px;
+
+  background: #09261b;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.favorite-btn:hover {
+  background: #123c2b;
+  transform: translateY(-1px);
+}
+
+.favorite-btn--active {
+  background: #35d98b;
+  color: #03140c;
+}
+
+.favorite-btn--active:hover {
+  background: #2bc57c;
+}
+
+
+/* =========================================
+   PÁGINA DE FAVORITOS
+========================================= */
+
+.favorites-page {
+  width: min(1100px, 92%);
+  margin: 40px auto;
+}
+
+.favorites-header {
+  margin-bottom: 30px;
+}
+
+.favorites-header h1 {
+  margin: 0 0 8px;
+
+  color: #ffffff;
+
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.favorites-header p {
+  margin: 0;
+  color: #8da69b;
+}
+
+
+/* =========================================
+   GRID DE FAVORITOS
+========================================= */
+
+.favorites-grid {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  );
+
+  gap: 20px;
+}
+
+
+/* =========================================
+   TARJETA FAVORITO
+========================================= */
+
+.favorite-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  padding: 20px;
+
+  background: #071b13;
+
+  border: 1px solid #123d2b;
+
+  border-radius: 16px;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.favorite-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #35d98b;
+}
+
+
+/* Escudo */
+
+.favorite-card__badge {
+  width: 70px;
+  height: 70px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+
+/* Información */
+
+.favorite-card__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.favorite-card__info h2 {
+  margin: 0 0 6px;
+
+  color: #ffffff;
+
+  font-size: 18px;
+}
+
+.favorite-card__info p {
+  margin: 0 0 8px;
+
+  color: #35d98b;
+
+  font-size: 13px;
+}
+
+.favorite-card__info span {
+  color: #8da69b;
+
+  font-size: 12px;
+}
+
+
+/* Botón quitar */
+
+.favorite-card__remove {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  border: none;
+  background: transparent;
+
+  color: #35d98b;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.favorite-card__remove:hover {
+  color: #ff6b6b;
+}
+
+
+/* =========================================
+   FAVORITOS VACÍOS
+========================================= */
+
+.favorites-empty {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 300px;
+
+  padding: 40px;
+
+  text-align: center;
+
+  background: #071b13;
+
+  border: 1px solid #123d2b;
+
+  border-radius: 18px;
+}
+
+.favorites-empty__icon {
+  margin-bottom: 15px;
+
+  color: #35d98b;
+
+  font-size: 60px;
+}
+
+.favorites-empty h2 {
+  margin: 0 0 10px;
+
+  color: #ffffff;
+}
+
+.favorites-empty p {
+  margin: 0;
+
+  max-width: 450px;
+
+  color: #8da69b;
+}
